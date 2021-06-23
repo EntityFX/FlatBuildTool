@@ -128,6 +128,7 @@ class TargetEnvironmentCommon:
                 'armv6l'  : 'arm6',
                 'aarch64' : 'arm64',
                 'arm64'   : 'arm64',
+                'e2k'     : 'e2k',
             }
         if machine in table_arch:
             self.HOST_ARCH= table_arch[machine]

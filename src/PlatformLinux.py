@@ -101,6 +101,7 @@ class TargetEnvironment( PlatformCommon.TargetEnvironmentCommon ):
             'arm7':  '-march=armv7-a -fPIC -marm -mfpu=%s -mfloat-abi=%s' % (self.ARM7FP, self.ARM7ABI),
             'arm6':  '-march=armv6 -marm -mfpu=vfp -mfloat-abi=hard',
             'arm64': '-march=' + self.ARM8ARCH,
+            'e2k':   '',
             }
         self.CC_FLAGS_R.extend( table_arch[ self.getTargetArch() ].split() )
 
